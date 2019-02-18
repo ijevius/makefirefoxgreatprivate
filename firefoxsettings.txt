@@ -1,0 +1,151 @@
+Здесь нет настроек, уже стоявших в "нужном" состоянии по умолчанию в Firefox 53.0.3 или некоторых таких, которых нет в стандартной поставке браузера, или тех, значение которых для безопасности или приватности не определено.
+
+browser.safebrowsing.enabled = false, browser.safebrowsing.malware.enabled = false, services.sync.prefs.sync.browser.safebrowsing.malware.enabled = false — отключают передачу информации о посещаемых веб-сайтах;
+
+dom.battery.enabled = false — -Battery API
+
+dom.enable_performance = false — отключает передачу браузером информации о времени начала и окончания загрузки страниц
+
+dom.network.enabled = false — запрещает поддержку Network API
+
+dom.storage.enabled = false — отключает Local storage;
+
+media.peerconnection.enabled = false — отключает WebRTC;
+
+network.dns.disablePrefetch = true — запрещает предварительное разрешение имён DNS для всех ссылок на веб-странице (пока пользователь сам не нажмёт на ссылку). Это может привести к утечке DNS при работе через прокси;
+
+security.enable_java = false — отключает Java;
+
+network.http.sendRefererHeader = 1, network.http.sendSecureXSiteReferrer = false — отключают передачу заголовка HTTP referer для обычного и зашифрованного соединения сответственно; //проверить sendSecureXSiteReferrer
+
+geo.enabled = false;
+
+geo.wifi.uri = [null];
+
+network.prefetch-next = false;
+
+network.proxy.socks_remote_dns = true — DNS через прокси-сервер, если он используется;
+
+network.proxy.no_proxies_on = [null] — запрет обращения к localhost; //вернуть 127.0.0.1, localhost, если возникнут проблемы
+
+webgl.disable-extensions = true, webgl.min_capability_mode = true;
+
+datareporting.policy.dataSubmissionEnabled = false;
+
+datareporting.healthreport.service.enabled = false;
+
+network.seer.enabled = false;
+
+dom.disable_window_open_feature.close = true — запретить блокировать кнопку "закрыть" у окна;
+
+dom.disable_window_open_feature.minimizable = true — запретить блокировать кнопку "свернуть" у окна;
+
+dom.disable_window_open_feature.directories = true;
+
+dom.disable_window_open_feature.menubar = true;
+
+dom.disable_window_open_feature.personalbar = true;
+
+dom.disable_window_open_feature.status = true — запрещает скриптам скрывать панель состояния;
+
+dom.disable_window_open_feature.titlebar = true — запрещает скриптам скрывать заголовок окна;
+
+dom.disable_window_status_change = true — запрещает менять текст в панели состояния;
+
+dom.popup_maximum — максимальное количество всплывающих окон, открытых одним скриптом;
+
+layout.word_select.eat_space_to_next_word = false — захватить следующий за словом пробел при выделении его двойным щелчком; //при чем это тут? просто я так хочу
+
+network.http.pipelining = false, network.http.proxy.pipelining = false — отключает туннелирование;
+
+nglayout.initialpaint.delay = 1 — задержка в секундах перед началом отрисовки страницы;
+
+network.prefetching_next = false;
+
+accessibility.tabfocus = 3 — действие по Tab;
+
+accessibility.typeaheadfind.autostart = false;
+
+accessibility.typeaheadfind.enabletimeout = false;
+
+accessibility.typeaheadfind.enablesound = false;
+
+accessibility.typeaheadfind.soundURL = default;
+
+beacon.enabled = false;
+
+browser.backspace_action = 2 — действие по Backspace;
+
+browser.cache.memory.capacity = 307200;
+
+browser.download.lastDir.savePerSite = true — папка загрузки файлов индивидуальна для каждого сайта;
+
+browser.link.open_newwindow = 3 — ссылки для нового окна будут открываться в новой вкладке;
+
+browser.link.open_newwindow.restriction = 0 — все ссылки будут открываться в новой вкладке;
+
+browser.preferences.instantApply = false — подтверждать изменение настроек;
+
+browser.safebrowsing.downloads.enabled = false — отправлять ли в Google сведения о загрузках для проверки на безопасность;
+
+browser.search.openintab = true;
+
+browser.send_pings = false;
+
+browser.sessionstore.resume_from_crash = true;
+
+browser.tabs.closeWindowWithLastTab = false — закрывать ли браузер при закрытии последней вкладки;
+
+browser.tabs.loadBookmarksInBackground = true — открывать вкладку с закладкой в фоне;
+
+browser.tabs.loadDivertedInBackground = true;
+
+browser.urlbar.trimURLs = false;
+
+media.autoplay.enabled = false;
+
+media.video_stats.enabled = false;
+
+network.proxy.share_proxy_settings = true;
+
+network.predictor.enabled = false;
+
+network.dns.disablePrefetchFromHTTPS = true;
+
+view_source.wrap_long_lines = true;
+
+social.enabled = false;
+
+dom.vibrator.enabled = false;
+
+dom.gamepad.enabled — API для игрового контроллера;
+
+media.block-autoplay-until-in-foreground = true — запретить проигрывание HTML5-медиа в фоне;
+
+browser.urlbar.decodeURLsOnCopy = true;
+
+mousewheel.min_line_scroll_amount — ускорение прокрутки мышью;
+
+devtools.command-button-screenshot.enabled = true — включить кнопку создания скриншота в Developer Tools;
+
+network.http.speculative-parallel-limit = 0;
+
+browser.search.geoip.url = [null];
+
+browser.startup.homepage_override.mstone = ignore;
+
+extensions.getAddons.cache.enabled = false;
+
+browser.selfsupport.url = [null];
+
+browser.newtabpage.enhanced = false;
+
+browser.newtabpage.directory.ping = [null];
+
+browser.newtabpage.directory.source = [null];
+
+browser.aboutHomeSnippets.updateUrl = [null];
+
+//могут возникнуть проблемы, сбросить при необходимости
+
+general.useragent.override = Mozilla/5.0 (Windows NT 6.1; WOW64;) Gecko Firefox 54;
