@@ -149,3 +149,7 @@ browser.aboutHomeSnippets.updateUrl = [null];
 //могут возникнуть проблемы, сбросить при необходимости
 
 general.useragent.override = Mozilla/5.0 (Windows NT 6.1; WOW64;) Gecko Firefox 54;
+
+network.proxy.socks: true
+network.proxy.socks_remote_dns: true
+browser.cache.disk.enable: false
